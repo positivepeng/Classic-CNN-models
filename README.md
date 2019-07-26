@@ -1,10 +1,10 @@
 # Classic-DNN-models
 使用keras实现经典深层神经网络
 
-- [x] LeNet
-- [x] AlexNet
-- [x] ZFNet
-- [x] VGGNet
-- [x] GoogLeNet
-- [x] Resnet
-- [x] DenseNet
+- [x] LeNet(1998)
+- [x] AlexNet(2012)
+- [x] ZFNet(2013)
+- [x] GoogLeNet/Inception(2014)
+- [x] VGGNet(2015)
+- [x] Resnet(2015)
+- [x] DenseNet(2017)

@@ -20,6 +20,7 @@ print("train size ", len(train_set[0])," type ",type(train_set[0][0]))
 print("valid size ", len(valid_set[0]))
 print("test size ", len(test_set[0]))
 
+
 # 提取训练集，验证集，测试集，并将label转换为独热码
 train_x = train_set[0].reshape((-1,28,28,1))
 train_y = to_categorical(train_set[1])

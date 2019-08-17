@@ -8,3 +8,5 @@
 - [x] VGGNet(2015)
 - [x] Resnet(2015)
 - [x] DenseNet(2017)
+- [x] SENet(2017)
+

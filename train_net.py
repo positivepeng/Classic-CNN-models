@@ -7,6 +7,7 @@ from GoogLeNet.GoogleNet import GoogLeNet
 from ResNet.ResNet34 import ResNet34
 from ResNet.ResNet50 import ResNet50
 from DenseNet.DenseNet import DenseNet
+from SENet.SE_ResNet import SE_ResNet34
 from keras.datasets import cifar10
 
 
@@ -19,7 +20,7 @@ def train_net(net, input_shape = "224x224"):
     # 训练网络，传入定义好的网络已经该网络对应的输入图片格式
     # 加载数据
     if input_shape in ["227x227", "224x224"]:
-        data_file_path = "cat_and_dog_{}.pickle".format(input_type)
+        data_file_path = "cat_and_dog_{}.pickle".format(input_shape)
         with open(data_file_path, "rb") as f:
             data = pickle.load(f)
     elif input_shape in ["32x32"]:
@@ -45,7 +46,7 @@ def train_net(net, input_shape = "224x224"):
     print("test acc:", test_result[1])
 
 if __name__ == "__main__":
-    train_net(AlexNet(), "227x227")
+    # train_net(AlexNet(), "227x227")
 
     # train_net(ZFNet(), "224x224")
     
@@ -61,6 +62,7 @@ if __name__ == "__main__":
     
     # train_net(DenseNet(), "32x32")
     
+    train_net(SE_ResNet34(), "224x224")
     
     
     
